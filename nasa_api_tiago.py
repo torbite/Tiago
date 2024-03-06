@@ -18,7 +18,7 @@ MAHLI
 
 import requests
 
-r = requests.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=MAHLI&api_key=n7eHVk1JAmkVdbJxgA8py91hFxNWCA6vstKSFE9B')
+r = requests.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=2000&camera=MAHLI&api_key=n7eHVk1JAmkVdbJxgA8py91hFxNWCA6vstKSFE9B')
 
 r.json()
 
