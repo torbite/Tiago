@@ -28,4 +28,4 @@ lst = []
 for i in range(len(dict(r.json())['photos'])):
   lst.append(dict(r.json())['photos'][i]['img_src'])
 print(f'Os links são: {lst}')
-print(f'Link da primeira imagem: {dict(r.json())["photos"][1]["img_src"]}')
+print(f'Link da primeira imagem: {dict(r.json())["photos"][0]["img_src"]}')
