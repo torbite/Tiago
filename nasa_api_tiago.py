@@ -16,15 +16,16 @@ RA: 23011105
 MAHLI
 """
 
-import requests, json
+import requests
 
 
 
 r = requests.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=2000&camera=MAHLI&api_key=n7eHVk1JAmkVdbJxgA8py91hFxNWCA6vstKSFE9B')
 
-print(dict(r.json())['photos'][1]['img_src'])
+
 
 lst = []
 for i in range(len(dict(r.json())['photos'])):
   lst.append(dict(r.json())['photos'][i]['img_src'])
-print(f'the links are: {lst}')
+print(f'Os links são: {lst}')
+print(f'Link da primeira imagem: {dict(r.json())["photos"][1]["img_src"]}')
